@@ -10,13 +10,13 @@ namespace Spawners
         [Range(2f, 5f)][SerializeField] float maxSpawnTime = 3f;
         [Range(0.2f, 2f)][SerializeField] float minSpawnTime = 1f;
 
-        [SerializeField] EnemyController enemy;
+        [SerializeField] EnemyController[] enemies;
 
         float _currentSpawnerTime;
         float _randomSpawnTime;
-        private void Awake()
+        private void Start()
         {
-            _randomSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+            ResetTimerAndGetRandomSpawnTime();
         }
         private void Update()
         {
@@ -24,16 +24,23 @@ namespace Spawners
 
             if (_currentSpawnerTime > _randomSpawnTime)
             {
-                Spawn();
-                _currentSpawnerTime = 0f;
-                _randomSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+                SpawnRandomEnemy();
+                ResetTimerAndGetRandomSpawnTime();
             }
         }
 
-        private void Spawn()
+        private void SpawnRandomEnemy()
         {
-            Instantiate(enemy, transform.position, transform.rotation);
+            int enemyNumber = Random.Range(0, enemies.Length);
+            Instantiate(enemies[enemyNumber], this.transform);
         }
+        
+        private void ResetTimerAndGetRandomSpawnTime()
+        {
+            _currentSpawnerTime = 0f;
+            _randomSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+        }
+
     }
 }
 
