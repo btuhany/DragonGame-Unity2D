@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 26309478357971648b6c7ad5a94df296, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -91,9 +91,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4852482507832884926, guid: 913d6684afc159743b4db8087b112725, type: 3}
+      propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1306880140951122742, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: m_Name
       value: RedEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932618941402321453, guid: 913d6684afc159743b4db8087b112725, type: 3}
+      propertyPath: maxLifeTime
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610766380550931240, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: m_RootOrder
