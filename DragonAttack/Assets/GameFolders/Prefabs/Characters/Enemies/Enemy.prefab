@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  moveToRight: 0
 --- !u!114 &1932618941402321453
 MonoBehaviour:
   m_ObjectHideFlags: 0

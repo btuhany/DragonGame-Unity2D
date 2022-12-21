@@ -99,6 +99,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1306880140951122742, guid: 913d6684afc159743b4db8087b112725, type: 3}
+      propertyPath: m_TagString
+      value: redEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1932618941402321453, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: maxLifeTime
       value: 6

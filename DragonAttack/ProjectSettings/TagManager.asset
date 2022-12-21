@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - UpperBoundary
+  - redEnemy
   layers:
   - Default
   - TransparentFX

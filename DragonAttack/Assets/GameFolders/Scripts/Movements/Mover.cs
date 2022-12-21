@@ -8,6 +8,7 @@ namespace Mover
     public class Mover : MonoBehaviour
     {
         [SerializeField] float moveSpeed=5f;
+        [SerializeField] bool moveToRight;
         Rigidbody2D _rigidbody2D;
         private void Awake()
         {
@@ -15,7 +16,11 @@ namespace Mover
         }
         private void Start()
         {
-            _rigidbody2D.velocity = Vector2.left * moveSpeed;
+            if(moveToRight)
+                _rigidbody2D.velocity = Vector2.right * moveSpeed;
+            else
+                _rigidbody2D.velocity = Vector2.left * moveSpeed;
+
         }
     }
 }

@@ -91,6 +91,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4852482507832884926, guid: 913d6684afc159743b4db8087b112725, type: 3}
+      propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1306880140951122742, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: m_Name
       value: ObstacleTree1
@@ -145,6 +149,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5610766380550931240, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800447256356269828, guid: 913d6684afc159743b4db8087b112725, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7800447256356269828, guid: 913d6684afc159743b4db8087b112725, type: 3}
