@@ -11,9 +11,17 @@ namespace Controllers
         {
             EnemyController enemy = collider.GetComponent<EnemyController>();
             if(enemy.tag=="redEnemy")
+            {
                 Destroy(collider.gameObject);
+                GameManager.Instance.AddScore(+5);
+            }
+                
             Destroy(this.gameObject);
             
+        }
+        protected override void LifeTimeEnded()
+        {
+            Destroy(this.gameObject);
         }
     }
 }

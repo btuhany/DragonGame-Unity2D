@@ -15,9 +15,11 @@ namespace Abstracts
             _currentTime += Time.deltaTime;
             if (_currentTime > maxLifeTime)
             {
-                Destroy(this.gameObject);
+                LifeTimeEnded();
             }
         }
+
+        protected abstract void LifeTimeEnded();
     }
 }
 

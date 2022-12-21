@@ -16,7 +16,8 @@ namespace Mover
         }
         private void Start()
         {
-            if(moveToRight)
+            
+            if (moveToRight)
                 _rigidbody2D.velocity = Vector2.right * moveSpeed;
             else
                 _rigidbody2D.velocity = Vector2.left * moveSpeed;

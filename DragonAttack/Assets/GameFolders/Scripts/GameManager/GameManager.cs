@@ -5,13 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] int totalScore;
     public static GameManager Instance { get; private set; }
 
+    public event System.Action<int> OnScoreChanged;  //Functions can be assigned to this event from
+                                                     //another script with OnEnable()
+                                                     // + System is a large library it's better to use this way. 
     private void Awake()
     {
         SingletonThisGameObject();
     }
-
+    public void Update()
+    {
+        
+    }
     public void SingletonThisGameObject()
     {
         if(Instance==null)
@@ -25,8 +32,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void AddScore(int score)
+    {
+        totalScore += score;
+        OnScoreChanged?.Invoke(totalScore); //trigger the event
+        //if(OnScoreChanged != null)
+        //{
+        //    OnScoreChanged();
+        //}
+    }
 
-    //////////////////////////
+
     public void RestartGame()
     {
        StartCoroutine(RestartGameAsync());

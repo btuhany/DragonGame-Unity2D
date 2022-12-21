@@ -107,17 +107,21 @@ PrefabInstance:
       propertyPath: maxLifeTime
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1932618941402321453, guid: 913d6684afc159743b4db8087b112725, type: 3}
+      propertyPath: isNotAnObstacle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5610766380550931240, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5610766380550931240, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5610766380550931240, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 5610766380550931240, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: m_LocalPosition.x
