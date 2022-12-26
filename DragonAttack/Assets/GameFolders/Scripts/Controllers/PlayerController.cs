@@ -42,11 +42,7 @@ namespace Controllers
             }
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
-        {
-            if(!(collision.gameObject.tag=="UpperBoundary"))
-                GameManager.Instance.RestartGame();
-        }
+        
     }
 
 
