@@ -6,6 +6,8 @@ TagManager:
   tags:
   - UpperBoundary
   - redEnemy
+  - enemyProjectile
+  - orangeEnemy
   layers:
   - Default
   - TransparentFX

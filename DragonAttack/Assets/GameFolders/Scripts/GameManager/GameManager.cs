@@ -7,6 +7,8 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] int totalScore;
+    
+    public bool gameOver=false;
     public static GameManager Instance { get; private set; }
 
     public event System.Action<int> OnScoreChanged;  //Functions can be assigned to this event from
@@ -16,10 +18,7 @@ public class GameManager : MonoBehaviour
     {
         SingletonThisGameObject();
     }
-    public void Update()
-    {
-        
-    }
+    
     public void SingletonThisGameObject()
     {
         if(Instance==null)
@@ -41,6 +40,38 @@ public class GameManager : MonoBehaviour
         //{
         //    OnScoreChanged();
         //}
+        CheckScoreAndAdjustDifficulty(totalScore);
+    }
+    private void CheckScoreAndAdjustDifficulty(int totalScore)
+    {
+        if(!gameOver)
+        {
+            if (totalScore > 650)
+            {
+                Time.timeScale = 2f;
+            }
+            else if (totalScore > 450)
+            {
+                Time.timeScale = 1.8f;
+            }
+            else if (totalScore > 350)
+            {
+                Time.timeScale = 1.7f;
+            }
+            else if (totalScore > 200)
+            {
+                Time.timeScale = 1.5f;
+            }
+            else if (totalScore > 130)
+            {
+                Time.timeScale = 1.3f;
+            }
+            else if (totalScore > 90)
+            {
+                Time.timeScale = 1.2f;
+            }
+        }
+        
     }
 
 

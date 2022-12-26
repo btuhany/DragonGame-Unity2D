@@ -11,7 +11,7 @@ namespace Mechanics
         [SerializeField] Transform launchingPosition;
         [SerializeField] GameObject projectileParent;
         [SerializeField] float timeLimit;
-        float _currentTime;
+        public float _currentTime;
         bool _ableToLaunch = true;
         private void Update()
         {

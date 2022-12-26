@@ -7,8 +7,8 @@ namespace Abstracts.Spawner
 {
     public abstract class BaseSpawner : MonoBehaviour
     {
-        [Range(2f, 5f)][SerializeField] float maxSpawnTime = 3f;
-        [Range(0.2f, 2f)][SerializeField] float minSpawnTime = 1f;
+        [Range(2f, 7f)][SerializeField] float maxSpawnTime = 3f;
+        [Range(0.2f, 4f)][SerializeField] float minSpawnTime = 1f;
 
         float _currentSpawnerTime;
         float _randomSpawnTime;

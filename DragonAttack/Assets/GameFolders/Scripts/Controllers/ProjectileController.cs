@@ -9,11 +9,20 @@ namespace Controllers
     {
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            EnemyController enemy = collider.GetComponent<EnemyController>();
-            if(enemy.tag=="redEnemy")
+            
+            if(collider.gameObject.tag=="redEnemy")
             {
                 Destroy(collider.gameObject);
                 GameManager.Instance.AddScore(+5);
+            }
+            else if(collider.gameObject.tag=="orangeEnemy")
+            {
+                Destroy(collider.gameObject);
+                GameManager.Instance.AddScore(+10);
+            }
+            else if(collider.gameObject.tag=="enemyProjectile")
+            {
+                Destroy(collider.gameObject);
             }
                 
             Destroy(this.gameObject);

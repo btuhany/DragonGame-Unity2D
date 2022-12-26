@@ -15,6 +15,7 @@ namespace Mechanics
             if (!(collision.gameObject.tag == "UpperBoundary"))
             {
                 OnDeath?.Invoke();
+                GameManager.Instance.gameOver = true;
                 Time.timeScale = 0f;
             }
 
