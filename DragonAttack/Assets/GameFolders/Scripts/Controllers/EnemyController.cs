@@ -18,7 +18,7 @@ namespace Controllers
         {
             if(!(isNotAnObstacle))
             {
-                GameManager.Instance.AddScore(5);
+                GameManager.Instance.AddScore(2);
             }
             Destroy(this.gameObject);
         }

@@ -105,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1932618941402321453, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: maxLifeTime
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1932618941402321453, guid: 913d6684afc159743b4db8087b112725, type: 3}
       propertyPath: isNotAnObstacle
