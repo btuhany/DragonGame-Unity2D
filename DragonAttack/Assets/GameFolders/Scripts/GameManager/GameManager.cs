@@ -65,11 +65,11 @@ public class GameManager : MonoBehaviour
             }
             else if (totalScore > 160)
             {
-                Time.timeScale = 1.2f;
+                Time.timeScale = 1.3f;
             }
             else if (totalScore > 100)
             {
-                Time.timeScale = 1.1f;
+                Time.timeScale = 1.2f;
             }
         }
         

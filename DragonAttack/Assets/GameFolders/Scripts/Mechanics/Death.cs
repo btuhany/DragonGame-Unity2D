@@ -6,7 +6,7 @@ namespace Mechanics
 {
     public class Death : MonoBehaviour
     {
-        
+        public bool IsDead;
         public event System.Action OnDeath;
 
 
@@ -15,6 +15,7 @@ namespace Mechanics
             if (!(collision.gameObject.tag == "UpperBoundary"))
             {
                 OnDeath?.Invoke();
+                IsDead=true;
                 GameManager.Instance.gameOver = true;
                 Time.timeScale = 0f;
             }

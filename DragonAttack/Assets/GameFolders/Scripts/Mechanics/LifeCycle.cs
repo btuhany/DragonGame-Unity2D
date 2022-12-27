@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Abstracts;
 
-public class NewBehaviourScript : MonoBehaviour
+namespace Mechanics
 {
-    // Start is called before the first frame update
-    void Start()
+    public class LifeCycle : LifeCycleController
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        protected override void LifeTimeEnded()
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
+

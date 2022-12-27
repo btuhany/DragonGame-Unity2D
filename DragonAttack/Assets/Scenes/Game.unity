@@ -572,6 +572,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 95321743, guid: 0191e7f75bcf44c41b29e4826158e401, type: 3}
+      propertyPath: m_Volume
+      value: 0.465
+      objectReference: {fileID: 0}
     - target: {fileID: 1062053212044573777, guid: 0191e7f75bcf44c41b29e4826158e401, type: 3}
       propertyPath: m_Name
       value: '[GameManager]'
@@ -691,30 +695,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1880645860, guid: 1d9e3b341ddaf564788e4dbc631673fe, type: 3}
-      propertyPath: m_Pitch
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880645860, guid: 1d9e3b341ddaf564788e4dbc631673fe, type: 3}
-      propertyPath: m_Volume
-      value: 0.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880645860, guid: 1d9e3b341ddaf564788e4dbc631673fe, type: 3}
-      propertyPath: BypassEffects
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880645860, guid: 1d9e3b341ddaf564788e4dbc631673fe, type: 3}
-      propertyPath: BypassReverbZones
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880645860, guid: 1d9e3b341ddaf564788e4dbc631673fe, type: 3}
-      propertyPath: BypassListenerEffects
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880645860, guid: 1d9e3b341ddaf564788e4dbc631673fe, type: 3}
-      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1784380408625101949, guid: 1d9e3b341ddaf564788e4dbc631673fe, type: 3}
       propertyPath: m_Name
       value: Player
