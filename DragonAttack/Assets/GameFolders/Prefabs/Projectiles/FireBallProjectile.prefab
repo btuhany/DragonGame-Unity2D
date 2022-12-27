@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &609538591997915701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775777786665968551}
+  m_Layer: 0
+  m_Name: EfxPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &775777786665968551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609538591997915701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.674, y: -0.03, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3690381305815648169}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1536857548293511658
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,6 +134,26 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.03415467
       objectReference: {fileID: 0}
+    - target: {fileID: -1975817007193373374, guid: 0dcb7e26cf9f67e45bf8434569b8a5a5, type: 3}
+      propertyPath: efxPosition
+      value: 
+      objectReference: {fileID: 609538591997915701}
+    - target: {fileID: -1975817007193373374, guid: 0dcb7e26cf9f67e45bf8434569b8a5a5, type: 3}
+      propertyPath: particleAndSound
+      value: 
+      objectReference: {fileID: 6086860003195955159, guid: 0a92a2723c90df4468d173b1b046c8c7, type: 3}
+    - target: {fileID: -1975817007193373374, guid: 0dcb7e26cf9f67e45bf8434569b8a5a5, type: 3}
+      propertyPath: fireballParticleAndSound
+      value: 
+      objectReference: {fileID: 8877631530109573608, guid: d667f8b078a45ea4b8861c98a037617c, type: 3}
+    - target: {fileID: -1975817007193373374, guid: 0dcb7e26cf9f67e45bf8434569b8a5a5, type: 3}
+      propertyPath: redEnemyParticleAndSound
+      value: 
+      objectReference: {fileID: 6086860003195955159, guid: 0a92a2723c90df4468d173b1b046c8c7, type: 3}
+    - target: {fileID: -1975817007193373374, guid: 0dcb7e26cf9f67e45bf8434569b8a5a5, type: 3}
+      propertyPath: orangeEnemyParticleAndSound
+      value: 
+      objectReference: {fileID: 4769034971436297717, guid: ed311152174f1a04abd422fe244d8b0d, type: 3}
     - target: {fileID: -305787483467941725, guid: 0dcb7e26cf9f67e45bf8434569b8a5a5, type: 3}
       propertyPath: moveSpeed
       value: 6.6
@@ -187,7 +238,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9189efb6bc661c04aa5f0e3ef4e1ac74, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.144
+  m_Volume: 0.537
   m_Pitch: 0.63
   Loop: 0
   Mute: 0

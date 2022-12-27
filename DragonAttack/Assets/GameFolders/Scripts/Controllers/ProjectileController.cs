@@ -7,21 +7,31 @@ namespace Controllers
 {
     public class ProjectileController : LifeCycleController
     {
+        [SerializeField] GameObject redEnemyParticleAndSound;
+        [SerializeField] GameObject orangeEnemyParticleAndSound;
+        [SerializeField] GameObject fireballParticleAndSound;
+        [SerializeField] GameObject efxPosition;
         private void OnTriggerEnter2D(Collider2D collider)
         {
             
             if(collider.gameObject.tag=="redEnemy")
             {
-                Destroy(collider.gameObject);
                 GameManager.Instance.AddScore(+5);
+                Instantiate(redEnemyParticleAndSound,efxPosition.transform.position,efxPosition.transform.rotation);
+                Destroy(collider.gameObject);
+                
+                
             }
             else if(collider.gameObject.tag=="orangeEnemy")
             {
-                Destroy(collider.gameObject);
                 GameManager.Instance.AddScore(+10);
+                Instantiate(orangeEnemyParticleAndSound,efxPosition.transform.position,efxPosition.transform.rotation);
+                Destroy(collider.gameObject);
+                
             }
             else if(collider.gameObject.tag=="enemyProjectile")
             {
+                Instantiate(fireballParticleAndSound,efxPosition.transform.position,efxPosition.transform.rotation);
                 Destroy(collider.gameObject);
             }
                 
