@@ -51,23 +51,23 @@ public class GameManager : MonoBehaviour
             {
                 Time.timeScale = 2f;
             }
-            else if (totalScore > 350)
+            else if (totalScore > 390)
             {
                 Time.timeScale = 1.8f;
             }
-            else if (totalScore > 250)
+            else if (totalScore > 3000)
             {
                 Time.timeScale = 1.6f;
             }
-            else if (totalScore > 170)
+            else if (totalScore > 220)
             {
                 Time.timeScale = 1.4f;
             }
-            else if (totalScore > 100)
+            else if (totalScore > 160)
             {
                 Time.timeScale = 1.2f;
             }
-            else if (totalScore > 60)
+            else if (totalScore > 100)
             {
                 Time.timeScale = 1.1f;
             }
@@ -82,10 +82,19 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
        StartCoroutine(StartGameAsync());
     }
+    public void ReturnMenu()
+    {
+       Time.timeScale = 1f;
+       StartCoroutine(GoToMenu());
+    }
     
     private IEnumerator StartGameAsync()
     {
         yield return SceneManager.LoadSceneAsync("Game");
+    }
+    private IEnumerator GoToMenu()
+    {
+        yield return SceneManager.LoadSceneAsync("Menu");
     }
 
     public void ExitGame()

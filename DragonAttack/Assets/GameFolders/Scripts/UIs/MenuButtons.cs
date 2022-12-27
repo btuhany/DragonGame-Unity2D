@@ -12,7 +12,7 @@ namespace UIs
         }
         public void NoButtonClick()
         {
-            Debug.Log("No button");
+            GameManager.Instance.ReturnMenu();
         }
     }
 }
