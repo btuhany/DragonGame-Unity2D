@@ -12,7 +12,7 @@ Apart from the sample project i added:
 - Added tree obstacle spawner also to the top thus, i think the game had been much better
 - Different scores from killing different enemies
 - Getting score while keep going without any need to kill enemies
-- Different background, different background boundaries
+- Different background, different background boundaries, different menu and gameover canvas
 
 
 ## In-Game Footage
