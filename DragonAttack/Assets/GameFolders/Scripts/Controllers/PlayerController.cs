@@ -14,6 +14,7 @@ namespace Controllers
         bool _isRightMouseClickedOrFPressed;
         Rigidbody2D _rigidbody2D;
         Jump _jump;
+        AudioSource _audiosource;
         PcInputController _pcInput;
         LaunchProjectile _launchProjectile;
         private void Awake()
@@ -22,6 +23,7 @@ namespace Controllers
             _jump = GetComponent<Jump>();
             _launchProjectile = GetComponent<LaunchProjectile>();
             _pcInput = new PcInputController();
+            _audiosource = GetComponent<AudioSource>();
         }
         void Update()
         {
@@ -37,8 +39,10 @@ namespace Controllers
         {
             if (_isMouseClickedOrSpacePressed)
             {
+                _audiosource.Play();
                 _jump.JumpAction(_rigidbody2D);
                 _isMouseClickedOrSpacePressed=false;
+
             }
         }
 

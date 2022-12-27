@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,39 +51,45 @@ public class GameManager : MonoBehaviour
             {
                 Time.timeScale = 2f;
             }
-            else if (totalScore > 450)
+            else if (totalScore > 350)
             {
                 Time.timeScale = 1.8f;
             }
-            else if (totalScore > 350)
+            else if (totalScore > 250)
             {
-                Time.timeScale = 1.7f;
+                Time.timeScale = 1.6f;
             }
-            else if (totalScore > 200)
+            else if (totalScore > 170)
             {
-                Time.timeScale = 1.5f;
+                Time.timeScale = 1.4f;
             }
-            else if (totalScore > 130)
-            {
-                Time.timeScale = 1.3f;
-            }
-            else if (totalScore > 90)
+            else if (totalScore > 100)
             {
                 Time.timeScale = 1.2f;
+            }
+            else if (totalScore > 60)
+            {
+                Time.timeScale = 1.1f;
             }
         }
         
     }
 
 
-    public void RestartGame()
+    public void StartGame()
     {
         totalScore = 0;
         Time.timeScale = 1f;
-       StartCoroutine(RestartGameAsync());
+       StartCoroutine(StartGameAsync());
     }
-    private IEnumerator RestartGameAsync()
+    
+    private IEnumerator StartGameAsync()
     {
         yield return SceneManager.LoadSceneAsync("Game");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

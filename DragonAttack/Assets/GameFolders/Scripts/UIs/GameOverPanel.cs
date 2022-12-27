@@ -16,6 +16,10 @@ namespace UIs
         {
             playerDeath.OnDeath += HandleOnDeath;
         }
+        private void OnDisable()         
+        {
+            playerDeath.OnDeath -= HandleOnDeath;
+        }
 
         private void HandleOnDeath()
         {
